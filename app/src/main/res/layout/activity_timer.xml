@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TimerActivity">
+
+    <FrameLayout
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/timer_x"
+            android:src="@drawable/x"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_margin="50dp" />
+
+        <ImageView
+            android:id="@+id/you_btn"
+            android:src="@drawable/youtube"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="800dp"
+            android:layout_marginRight="425dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="850dp"
+            android:text="전체 운동 시간"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/total_time"
+            android:layout_width="600dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="800dp"
+            android:gravity="center|bottom"
+            android:text="01:10:00"
+            android:textColor="@color/black"
+            android:background="@drawable/line"
+            android:textSize="125dp" />
+
+        <TextView
+            android:id="@+id/routine_time"
+            android:layout_width="850dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="01:10:00"
+            android:background="@drawable/line"
+            android:textColor="@color/black"
+            android:textSize="200dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="625dp"
+            android:text="운동 타이머"
+            android:textColor="@color/black"
+            android:textSize="100dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="110dp"
+            android:layout_marginBottom="500dp"
+            android:text="이전"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="500dp"
+            android:gravity="center"
+            android:text="현재"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="110dp"
+            android:layout_marginBottom="500dp"
+            android:text="다음"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/prev_health"
+            android:layout_width="320dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center|left"
+            android:layout_marginBottom="400dp"
+            android:autoSizeMaxTextSize="50dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="이전 운동"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="180dp"
+            android:layout_marginBottom="400dp"
+            android:text="▶▶"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/health_name"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="450dp"
+            android:autoSizeMaxTextSize="50dp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/line2"
+            android:gravity="center|bottom"
+            android:text="현재 운동"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="180dp"
+            android:layout_marginBottom="400dp"
+            android:text="▶▶"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/next_health"
+            android:layout_width="320dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center|right"
+            android:layout_marginBottom="400dp"
+            android:gravity="center"
+            android:text="다음 운동"
+            android:textColor="@color/black"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="50dp"
+            android:textSize="50dp" />
+
+        <ImageView
+            android:id="@+id/prev_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="375dp"
+            android:layout_marginBottom="250dp" />
+
+        <ImageView
+            android:id="@+id/now_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="250dp" />
+
+        <ImageView
+            android:id="@+id/next_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="375dp"
+            android:layout_marginBottom="250dp" />
+
+        <TextView
+            android:id="@+id/exe_count"
+            android:layout_width="325dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="100dp"
+            android:layout_marginRight="350dp"
+            android:layout_marginTop="225dp"
+            android:text="회"
+            android:background="@drawable/line3"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <ImageView
+            android:src="@drawable/exe_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="425dp"
+            android:layout_marginTop="225dp" />
+
+        <TextView
+            android:id="@+id/set_count"
+            android:layout_width="325dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center|right"
+            android:paddingRight="25dp"
+            android:layout_marginTop="225dp"
+            android:text="세트 수"
+            android:background="@drawable/line3"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <ImageView
+            android:src="@drawable/re_logo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="225dp" />
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="325dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="100dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="225dp"
+            android:text="중량"
+            android:background="@drawable/line3"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <ImageView
+            android:src="@drawable/we_logo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="225dp" />
+
+        <TextView
+            android:id="@+id/exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="350dp"
+            android:layout_marginRight="100dp"
+            android:text="운동"
+            android:textColor="#999999"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="350dp"
+            android:text="휴식"
+            android:textColor="#999999"
+            android:textSize="50dp" />
+
+        <ImageView
+            android:id="@+id/countdown_button"
+            android:src="@drawable/start"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="500dp" />
+
+        <ImageView
+            android:id="@+id/prev_btn"
+            android:src="@drawable/rewind"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="250dp"
+            android:layout_marginTop="500dp" />
+
+        <ImageView
+            android:id="@+id/stop_btn"
+            android:src="@drawable/resume"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="500dp" />
+
+        <ImageView
+            android:id="@+id/next_btn"
+            android:src="@drawable/forward"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="500dp" />
+
+        <ImageView
+            android:id="@+id/end_btn"
+            android:src="@drawable/stop"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="725dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

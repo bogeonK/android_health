@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AchievementActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/ach_x"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/x"
+            android:layout_gravity="right"
+            android:layout_margin="50dp"/>
+
+        <ImageView
+            android:id="@+id/lv_image"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:src="@drawable/lv00"
+            android:layout_marginLeft="0dp" />
+
+        <TextView
+            android:id="@+id/ach_lv"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:text="레벨"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/exp_bar"
+            android:layout_width="425dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="300dp"
+            android:gravity="center|left"
+            android:background="@drawable/lvline"
+            android:paddingLeft="25dp"
+            android:text="■"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/exp_info"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center|right"
+            android:gravity="center"
+            android:layout_marginRight="100dp"
+            android:text="성취도"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/com_ach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:text="달성 업적"
+                android:background="@drawable/line01"
+                android:textColor="@color/black"
+                android:textSize="100dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="업적 이름"
+                    android:background="@drawable/line01"
+                    android:textColor="@color/black"
+                    android:textSize="50dp" />
+
+                <TextView
+                    android:layout_width="530dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/line01"
+                    android:text="내용"
+                    android:textColor="@color/black"
+                    android:textSize="50dp" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/line01"
+                    android:text="점수"
+                    android:textColor="@color/black"
+                    android:textSize="50dp" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="1100dp"
+                android:scrollbarFadeDuration="0"
+                android:scrollbarSize="5dp"
+                android:scrollbarThumbVertical="@android:color/darker_gray"
+                android:scrollbars="vertical"></androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/non_ach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:background="@drawable/line01"
+                android:text="미달성 업적"
+                android:textColor="@color/black"
+                android:textSize="100dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/line01"
+                    android:text="업적 이름"
+                    android:textColor="@color/black"
+                    android:textSize="50dp" />
+
+                <TextView
+                    android:layout_width="530dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/line01"
+                    android:gravity="center"
+                    android:text="내용"
+                    android:textColor="@color/black"
+                    android:textSize="50dp" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/line01"
+                    android:text="점수"
+                    android:textColor="@color/black"
+                    android:textSize="50dp" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv2"
+                android:layout_width="match_parent"
+                android:layout_height="1100dp"
+                android:layout_weight="1"
+                android:scrollbarFadeDuration="0"
+                android:scrollbarSize="5dp"
+                android:scrollbarThumbVertical="@android:color/darker_gray"
+                android:scrollbars="vertical"></androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/com_btn"
+            android:layout_width="540dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="달성 업적"
+            android:textSize="50dp"/>
+
+        <Button
+            android:id="@+id/non_btn"
+            android:layout_width="540dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="미달성 업적"
+            android:textSize="50dp" />
+    </LinearLayout>
+</LinearLayout>

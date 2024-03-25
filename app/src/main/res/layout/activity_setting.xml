@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingActivity">
+    <FrameLayout
+        android:id="@+id/profile_back"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/woman_purple_profile" />
+
+        <ImageView
+            android:id="@+id/setting_x"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/x"
+            android:layout_gravity="right"
+            android:layout_margin="50dp"/>
+
+        <TextView
+            android:id="@+id/setting_userinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="200dp"
+            android:text="환영합니다."
+            android:textSize="50dp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/setting_lvimage"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:src="@drawable/lv00"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/setting_achlv"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="125dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:text="레벨"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/setting_gender"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="남여"
+            android:textSize="50dp"/>
+
+        <TextView
+            android:id="@+id/setting_age"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="나이"
+            android:textSize="50dp"/>
+
+        <TextView
+            android:id="@+id/setting_weight"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="350dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="KG"
+            android:textSize="50dp"/>
+
+        <TextView
+            android:id="@+id/setting_height"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="350dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="CM"
+            android:textSize="50dp"/>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="1250dp"
+        android:background="@drawable/line">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="horizontal"
+            android:background="@drawable/line" >
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:paddingLeft="50dp"
+                android:src="@drawable/setting_ach"/>
+            <TextView
+                android:id="@+id/setting_achlist"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="center|left"
+                android:paddingLeft="100dp"
+                android:text="업적 목록"
+                android:textSize="100dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="horizontal"
+            android:background="@drawable/line" >
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:paddingLeft="50dp"
+                android:src="@drawable/setting_theme"/>
+            <TextView
+                android:id="@+id/setting_profile"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="center|left"
+                android:paddingLeft="100dp"
+                android:text="프로필 변경"
+                android:textSize="100dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="horizontal"
+            android:background="@drawable/line" >
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:paddingLeft="50dp"
+                android:src="@drawable/setting_userinfo_change"/>
+            <TextView
+                android:id="@+id/setting_userInfoChange"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="center|left"
+                android:paddingLeft="100dp"
+                android:text="사용자 정보 수정"
+                android:textSize="100dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="horizontal"
+            android:background="@drawable/line" >
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:paddingLeft="50dp"
+                android:src="@drawable/setting_another"/>
+            <TextView
+                android:id="@+id/setting_another"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="center|left"
+                android:paddingLeft="100dp"
+                android:text="개발자 정보"
+                android:textSize="100dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 년/월/일을 표시할 TextView -->
+        <TextView
+            android:id="@+id/date_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="70sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true" />
+
+        <!-- 시간을 표시할 TextView -->
+        <TextView
+            android:id="@+id/time_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="70sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/date_textview"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/main_button"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:background="@drawable/main_button"
+            android:layout_centerInParent="true"
+            android:text="메인 화면" />
+
+        <Button
+            android:id="@+id/exercise_button"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/main_button"
+            android:layout_toLeftOf="@id/main_button"
+            android:background="@drawable/routine_button"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/routine_button"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_above="@id/main_button"
+            android:layout_toLeftOf="@id/main_button"
+            android:background="@drawable/exercise_button"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/calendar_button"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/main_button"
+            android:layout_toRightOf="@id/main_button"
+            android:background="@drawable/calendar_button"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/setting_button"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_above="@id/main_button"
+            android:layout_toRightOf="@id/main_button"
+            android:background="@drawable/setting_button"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</FrameLayout>

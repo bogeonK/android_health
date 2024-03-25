@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileSetting">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1200dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/profile_x"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/x"
+            android:layout_gravity="right"
+            android:layout_margin="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="500dp"
+            android:text="  프로필 설정  "
+            android:textSize="100dp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/btn_white"
+            android:layout_width="500dp"
+            android:layout_height="250dp"
+            android:src="@drawable/woman_white_profile"
+            android:layout_gravity="center"
+            android:layout_marginRight="275dp"
+            android:layout_marginBottom="250dp"/>
+
+        <ImageView
+            android:id="@+id/btn_green"
+            android:layout_width="500dp"
+            android:layout_height="250dp"
+            android:src="@drawable/woman_green_profile"
+            android:layout_gravity="center"
+            android:layout_marginLeft="275dp"
+            android:layout_marginBottom="250dp"/>
+
+        <ImageView
+            android:id="@+id/green_lock"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/lock"
+            android:layout_gravity="center"
+            android:layout_marginLeft="275dp"
+            android:layout_marginBottom="250dp" />
+
+        <TextView
+            android:id="@+id/green_text"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="275dp"
+            android:layout_marginBottom="150dp"
+            android:textSize="50dp"
+            android:text="20레벨 해금"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/btn_purple"
+            android:layout_width="500dp"
+            android:layout_height="250dp"
+            android:src="@drawable/woman_purple_profile"
+            android:layout_gravity="center"
+            android:layout_marginRight="275dp"
+            android:layout_marginTop="50dp"/>
+
+        <ImageView
+            android:id="@+id/purple_lock"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/lock"
+            android:layout_gravity="center"
+            android:layout_marginRight="275dp"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:id="@+id/purple_text"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="275dp"
+            android:layout_marginTop="150dp"
+            android:textSize="50dp"
+            android:text="40레벨 해금"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/btn_yellow"
+            android:layout_width="500dp"
+            android:layout_height="250dp"
+            android:src="@drawable/man_yellow_profile"
+            android:layout_gravity="center"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="50dp"/>
+
+        <ImageView
+            android:id="@+id/yellow_lock"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/lock"
+            android:layout_gravity="center"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:id="@+id/yellow_text"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="150dp"
+            android:textSize="50dp"
+            android:text="60레벨 해금"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/btn_blue"
+            android:layout_width="500dp"
+            android:layout_height="250dp"
+            android:src="@drawable/woman_blue_profile"
+            android:layout_gravity="center"
+            android:layout_marginRight="275dp"
+            android:layout_marginTop="350dp"/>
+
+        <ImageView
+            android:id="@+id/blue_lock"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/lock"
+            android:layout_gravity="center"
+            android:layout_marginRight="275dp"
+            android:layout_marginTop="350dp" />
+
+        <TextView
+            android:id="@+id/blue_text"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="275dp"
+            android:layout_marginTop="450dp"
+            android:textSize="50dp"
+            android:text="80레벨 해금"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/btn_black"
+            android:layout_width="500dp"
+            android:layout_height="250dp"
+            android:src="@drawable/woman_black_profile"
+            android:layout_gravity="center"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="350dp"/>
+
+
+        <ImageView
+            android:id="@+id/black_lock"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/lock"
+            android:layout_gravity="center"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="350dp" />
+
+        <TextView
+            android:id="@+id/black_text"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="450dp"
+            android:textSize="50dp"
+            android:text="100레벨 해금"
+            android:textColor="@color/black"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp" >
+        <TextView
+            android:id="@+id/profile_lv"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center|top"
+            android:gravity="center"
+            android:textSize="50dp"
+            android:textColor="@color/black"
+            android:text="현재 레벨" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="200dp"
+            android:text="현재 적용중인 프로필"
+            android:textSize="50dp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/current_color"
+            android:layout_width="500dp"
+            android:layout_height="250dp"
+            android:src="@drawable/woman_black_profile"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"/>
+
+        <Button
+            android:id="@+id/setting_color"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="200dp"
+            android:text="저장"
+            android:textSize="50dp"/>
+    </FrameLayout>
+
+</LinearLayout>
